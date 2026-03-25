@@ -96,8 +96,8 @@ import {
 } from "../utils";
 import { estimateTokenLengthInLLM } from "@/app/utils/token";
 
+import { ClientApi, getClientApi } from "../client/api";
 import type {
-  ClientApi,
   Model,
   MultimodalContent,
   RichMessage,
@@ -158,7 +158,6 @@ import { prettyObject } from "../utils/format";
 import { ExportMessageModal } from "./exporter";
 import { getClientConfig } from "../config/client";
 import { useModelTable } from "../context/model-table";
-import { getClientApi } from "../client/api";
 import { createTTSPlayer } from "../utils/audio";
 import { MsEdgeTTS, OUTPUT_FORMAT } from "../utils/ms_edge_tts";
 
